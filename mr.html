@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Match Results</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      margin: 0;
+      padding: 40px;
+      color: #fff;
+    }
+
+    /* 🔹 Tabs Navigation */
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    .tab-link {
+      padding: 10px 20px;
+      border-radius: 25px;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .tab-link:hover {
+      background: linear-gradient(90deg, #ff6a00, #ee0979);
+      transform: scale(1.08);
+    }
+    .tab-link.active {
+      background: linear-gradient(90deg, #ff512f, #dd2476);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 34px;
+      letter-spacing: 1px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+
+    table {
+      width: 90%;
+      max-width: 900px;
+      margin: auto;
+      border-collapse: collapse;
+      background: #ffffff10;
+      backdrop-filter: blur(6px);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    }
+
+    th, td {
+      padding: 14px 16px;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    th {
+      background: linear-gradient(90deg, #ff512f, #dd2476);
+      color: #fff;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Zebra stripes */
+    tr:nth-child(even) td { background: rgba(255,255,255,0.05); }
+    tr:nth-child(odd) td { background: rgba(255,255,255,0.12); }
+
+    tr:hover td {
+      background: rgba(255, 255, 255, 0.25);
+      transition: 0.3s;
+    }
+
+    /* Buttons inside table */
+    a.result-link {
+      display: inline-block;
+      padding: 6px 12px;
+      margin: 3px;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      color: #fff;
+      font-size: 14px;
+      text-decoration: none;
+      border-radius: 20px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    a.result-link:hover {
+      background: linear-gradient(90deg, #ff6a00, #ee0979);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔹 Tabs -->
+  <div class="container">
+    <a href="results.html" class="tab-link active">Back</a>
+    
+  </div>
+
+  <h1> Match Results</h1>
+
+  <table id="a">
+    <tr>
+      <th>Date</th>
+      <th>Ground</th>
+      <th>Match</th>
+      <th>Winner</th>
+      <th>Scorecard</th>
+    </tr>
+    <tr>
+      <td>2025-09-05</td>
+      <td>Batemulla National School</td>
+      <td>Panchaliya Red Lions 🦁 Vs Imaduwa Red Lions 💙</td>
+      <td>Panchaliya Red Lions</td>
+      <td>
+        <a class="result-link" href="match1.png" target="_blank">👀 View</a>
+        <a class="result-link" href="match1.png" download>⬇ Download</a>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>

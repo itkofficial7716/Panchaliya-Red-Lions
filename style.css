@@ -175,6 +175,7 @@ footer .social-icons a:hover {
   width: 260px;
   padding: 40px;
   transition: transform 0.7s, box-shadow 0.3s;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
 }
 
 .team-card img {
@@ -314,6 +315,8 @@ color: #f39c12;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
+ 
+  
 }
 
 .result-card:hover {
@@ -341,12 +344,13 @@ color: #f39c12;
 
 /* Winner Highlight */
 .result-card.winner {
-  border-left: 8px solid #2ecc71;
+  border-left: 8px solid #e608ee;
   background: linear-gradient(135deg, #ffffff, #e8fff2);
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
 }
 
 .result-card.winner p {
-  color: #2ecc71;
+  color: #fadbdb;
 }
 
 /* Responsive */
